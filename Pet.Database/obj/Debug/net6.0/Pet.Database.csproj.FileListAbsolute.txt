@@ -1,0 +1,14 @@
+C:\Users\lozan\source\repos\Pets\Pet.Database\bin\Debug\net6.0\Pet.Database.deps.json
+C:\Users\lozan\source\repos\Pets\Pet.Database\bin\Debug\net6.0\Pet.Database.runtimeconfig.json
+C:\Users\lozan\source\repos\Pets\Pet.Database\bin\Debug\net6.0\Pet.Database.dll
+C:\Users\lozan\source\repos\Pets\Pet.Database\bin\Debug\net6.0\ref\Pet.Database.dll
+C:\Users\lozan\source\repos\Pets\Pet.Database\bin\Debug\net6.0\Pet.Database.pdb
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.csproj.AssemblyReference.cache
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.AssemblyInfoInputs.cache
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.AssemblyInfo.cs
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.csproj.CoreCompileInputs.cache
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.dll
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\ref\Pet.Database.dll
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.pdb
+C:\Users\lozan\source\repos\Pets\Pet.Database\obj\Debug\net6.0\Pet.Database.genruntimeconfig.cache

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Pet.Database;
+using WEB.Dal.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ string conString = builder.Configuration.GetConnectionString("DefaultConnection"
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(conString));
 
+builder.Services.AddScoped<BaseInformationService>();
+builder.Services.AddScoped<ColorService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,0 +1,40 @@
+﻿@using WEB.Dal.Models.Admin;
+@model BaseInformationEditViewModel;
+@{
+    Layout = "~/Views/ShareAdmin/_AdminLayout.cshtml";
+}
+<form method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-sm-4">
+            <div>
+                Pet Name:  <input type="text" name="Name" class="form-control" />
+            </div>
+            <div>
+                Pet Age:  <input type="number" name="Age" class="form-control" />
+            </div>
+             <div>
+                Image:  <input type="file" accept="image/*" name="MainImage" class="form-control" />
+            </div>
+
+            <div>
+                Color: 
+                <select name="ColorId" class="form-control">
+                    <option>Without</option>
+                    @foreach(var color in Model.Colors)
+                    {
+                        <option value="@color.Id">@color.Name</option>
+                    }
+                </select>
+            </div>
+             <div>
+                Weight:  <input type="number" name="Weight" class="form-control" />
+            </div>
+             <div>
+                Gender:  <input type="text"  name="Gender" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <button class="btn btn-info">Save</button>
+        </div>
+    </div>
+</form>

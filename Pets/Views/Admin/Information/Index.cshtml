@@ -1,0 +1,67 @@
+﻿@model List<Pet.Database.Models.BaseInformation>
+@{
+    Layout = "~/Views/ShareAdmin/_AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="col-sm-12">
+        <a href="/Admin/Categories/Create" class="btn btn-info">Add new category</a>
+        <table class="table table-bordered">
+            <tr>
+                <td>
+                    Id
+                </td>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Age
+                </td>
+                <td>
+                    Image
+                </td>
+                <td>
+                    Weight
+                </td>
+                <td>
+                    Gender
+                </td>
+                <td>
+                    Actions
+                </td>
+            </tr>
+            @foreach (var pet in Model)
+            {
+                <tr>
+                    <td>
+                        @pet.Id
+                    </td>
+                   
+                    <td>
+                        @pet.Name
+                    </td>
+                     <td>
+                        @pet.Age
+                    </td>
+                     <td>
+                         @if (pet.MainImage != null)
+                            {
+                                <img class="table-image" src="/img/@pet.MainImage" />
+                            }
+                    </td>
+                     <td>
+                        @pet.Weight
+                    </td>
+                    <td>
+                        @pet.Gender
+                    </td>
+                    <td>
+                        <a href="/Admin/Information/Edit/@pet.Id" class="btn btn-info">Edit</a>
+                        <a href="/Admin/Information/Delete/@pet.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+

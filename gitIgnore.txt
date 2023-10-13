@@ -1,0 +1,4 @@
+Pet/obj
+Pet/bin
+Pet.Database/bin
+Pet.Database/obj

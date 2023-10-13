@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Pet.Database\Pet.Database.csproj" />
+    <ProjectReference Include="..\WEB.Dal\WEB.Dal.csproj" />
   </ItemGroup>
 
 </Project>

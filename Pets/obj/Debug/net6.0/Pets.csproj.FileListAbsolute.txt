@@ -69,3 +69,5 @@ C:\Users\lozan\source\repos\Pets\Pets\obj\Debug\net6.0\Pets.dll
 C:\Users\lozan\source\repos\Pets\Pets\obj\Debug\net6.0\ref\Pets.dll
 C:\Users\lozan\source\repos\Pets\Pets\obj\Debug\net6.0\Pets.pdb
 C:\Users\lozan\source\repos\Pets\Pets\obj\Debug\net6.0\Pets.genruntimeconfig.cache
+C:\Users\lozan\source\repos\Pets\Pets\bin\Debug\net6.0\WEB.Dal.dll
+C:\Users\lozan\source\repos\Pets\Pets\bin\Debug\net6.0\WEB.Dal.pdb

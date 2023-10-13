@@ -1,0 +1,15 @@
+C:\Users\lozan\source\repos\Pets\WEB.Dal\bin\Debug\net6.0\WEB.Dal.deps.json
+C:\Users\lozan\source\repos\Pets\WEB.Dal\bin\Debug\net6.0\WEB.Dal.dll
+C:\Users\lozan\source\repos\Pets\WEB.Dal\bin\Debug\net6.0\ref\WEB.Dal.dll
+C:\Users\lozan\source\repos\Pets\WEB.Dal\bin\Debug\net6.0\WEB.Dal.pdb
+C:\Users\lozan\source\repos\Pets\WEB.Dal\bin\Debug\net6.0\Pet.Database.dll
+C:\Users\lozan\source\repos\Pets\WEB.Dal\bin\Debug\net6.0\Pet.Database.pdb
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.csproj.AssemblyReference.cache
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.AssemblyInfoInputs.cache
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.AssemblyInfo.cs
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.csproj.CoreCompileInputs.cache
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.csproj.CopyComplete
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.dll
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\ref\WEB.Dal.dll
+C:\Users\lozan\source\repos\Pets\WEB.Dal\obj\Debug\net6.0\WEB.Dal.pdb

@@ -89,6 +89,34 @@ jQuery(document).ready(function () {
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contacts.html">Contacts </a></li>
           </ul>
+           @if (!User.Identity.IsAuthenticated)
+                        {
+                            <div class="navbar-nav ml-auto py-0">
+                                <a href="/login" class="btn">Login</a>
+                                <a href="/register" class="btn">Register</a>
+                            </div>
+                        }
+                        else
+                        {
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <div class="navbar-nav ml-auto py-0">
+                                    <a href="/Admin/Dashboard" class="nav-item nav-link">Admin Panel</a>
+                                </div>
+                            }
+                            @if (User.IsInRole("Manager"))
+                            {
+                                <div class="navbar-nav ml-auto py-0">
+                                    <a href="/Admin/Products" class="nav-item nav-link">Admin Panel</a>
+                                </div>
+                            }
+                            <div class="navbar-nav py-0">
+                               Hello,@User.Identity.Name <br/>
+                               <a href="/logout">Logout</a>
+                            
+                            </div>
+                        }
+                        
         </nav>
         <div class="clear"></div>
       </div>

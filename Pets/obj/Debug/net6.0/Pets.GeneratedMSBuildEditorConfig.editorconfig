@@ -23,8 +23,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5mb3JtYXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lozan/source/repos/Pets/Pets/Views/Admin/Information/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5mb3JtYXRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lozan/source/repos/Pets/Pets/Views/Admin/Information/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5mb3JtYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lozan/source/repos/Pets/Pets/Views/Admin/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lozan/source/repos/Pets/Pets/Views/Home/Index.cshtml]
@@ -45,6 +53,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lozan/source/repos/Pets/Pets/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lozan/source/repos/Pets/Pets/Views/Site/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVxBY2NvdW50XExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lozan/source/repos/Pets/Pets/Views/Site/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVxBY2NvdW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lozan/source/repos/Pets/Pets/Views/_ViewImports.cshtml]

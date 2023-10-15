@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pet.Database;
+using Pet.Database.Models;
 using WEB.Dal.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,23 @@ builder.Services.AddControllersWithViews();
 string conString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(conString));
+builder.Services.AddDefaultIdentity<User>(options =>
+{
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequiredLength = 1;
+    options.Password.RequireDigit = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireLowercase = false;
+})
+    .AddRoles<IdentityRole>()//da mojem da izpolzvame roli
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/login";
+    options.AccessDeniedPath = "/404";
+});
+
 
 builder.Services.AddScoped<BaseInformationService>();
 builder.Services.AddScoped<ColorService>();
@@ -27,7 +46,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

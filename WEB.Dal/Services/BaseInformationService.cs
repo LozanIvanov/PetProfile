@@ -30,11 +30,22 @@ namespace WEB.Dal.Services
         public void Update(int id, BaseInformation information)
         {
             var newinformation = dbContext.BaseInformations.Where(x => x.Id == id).FirstOrDefault();
-            newinformation.Name = information.Name;
-
+            
+            if (newinformation != null) {
+                newinformation.Name = information.Name;
+                newinformation.Age = information.Age;
+                newinformation.ColorId = information.ColorId;
+                newinformation.Weight = information.Weight;
+                newinformation.Gender= information.Gender;
+            }
+            if (!string.IsNullOrEmpty(information.MainImage)) {
+                newinformation.MainImage = information.MainImage;
+            }
             dbContext.Entry(newinformation).State = EntityState.Modified;
             dbContext.SaveChanges();
-        }
+            
+
+            }
         public void Delete(int id)
         {
             var deleted = GetInformationById(id);

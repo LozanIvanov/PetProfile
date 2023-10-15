@@ -56,12 +56,21 @@ namespace Pets.Controllers.Admin
         }
         [HttpGet]
         [Route("/Admin/Information/Edit/{id}")]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            BaseInformationEditViewModel model = new BaseInformationEditViewModel();
-           // model.Categories = service.GetCategories();
-           // model.SelectedCategory = service.GetCategoryById(id);
-            return View("~/Views/Admin/Information/Edit.cshtml", model);
+           
+            var model = baseservice.GetInformationById(id);
+
+            BaseInformationEditViewModel m=new BaseInformationEditViewModel();
+            m.Name = model.Name;
+            m.Age = model.Age;
+            m.Weight = model.Weight;
+            m.Gender = model.Gender;
+            m.ColorId=model.ColorId;
+
+            m.Colors = colorService.GetColors();  
+
+            return View("~/Views/Admin/Information/Edit.cshtml", m);
         }
         [HttpPost]
         [Route("/Admin/Information/Edit/{id}")]
@@ -98,7 +107,7 @@ namespace Pets.Controllers.Admin
         private async Task<string> UploadFile(IFormFile file)
         {
             var uniqueFileName = Guid.NewGuid() + "-" + file.FileName;
-            var filePath = Path.Combine("wwwroot", "images", uniqueFileName);
+            var filePath = Path.Combine("wwwroot","Admin","assets", "img", uniqueFileName);
 
             using (var stream = System.IO.File.Create(filePath))
             {
